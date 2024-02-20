@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-19T18:59:30.983917" rpa="false" schemaversion="5">
+<suite id="s1" name="Sankhya Treinamento Robot Framework" source="C:\Users\felipe.fiuza\Documents\sankhya_treinamento_robot_framework">
+<suite id="s1-s1" name="Exemplo" source="C:\Users\felipe.fiuza\Documents\sankhya_treinamento_robot_framework\exemplo.robot">
+<test id="s1-s1-t1" name="Teste1" line="14">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-19T18:59:31.041032" level="INFO">${log} = 
+ hello word 
+</msg>
+<var>${log}</var>
+<arg>\n hello</arg>
+<arg>word \n</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-19T18:59:31.040451" elapsed="0.000581"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:31.041032" elapsed="0.002507"/>
+</kw>
+<tag>Cat</tag>
+<tag>Cats</tag>
+<status status="PASS" start="2024-02-19T18:59:31.036450" elapsed="0.008127"/>
+</test>
+<test id="s1-s1-t2" name="Teste2" line="19">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n\n meu segundo teste \n\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:31.048622" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-19T18:59:31.044577" elapsed="0.004045"/>
+</test>
+<test id="s1-s1-t3" name="Teste3" line="22">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n\n Olá ${a} ${b}!! \n\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:31.053014" elapsed="6.855583"/>
+</kw>
+<tag>Cats</tag>
+<status status="PASS" start="2024-02-19T18:59:31.051680" elapsed="6.856917"/>
+</test>
+<test id="s1-s1-t4" name="Teste4" line="26">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n\n Olá ${Pessoa.nome} ${Pessoa.sobrenome} voce tem ${Pessoa.idade}, mora em ${Pessoa.cidade}, trabalha na ${Pessoa.empresa} no cargo de ${Pessoa.cargo} !! \n\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:39.100980" elapsed="0.676496"/>
+</kw>
+<tag>dicionario</tag>
+<status status="PASS" start="2024-02-19T18:59:37.914581" elapsed="1.862895"/>
+</test>
+<test id="s1-s1-t5" name="Teste5" line="30">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:44.244123" elapsed="0.003026"/>
+</kw>
+<var name="${ELEMENT}">abacaxi</var>
+<status status="PASS" start="2024-02-19T18:59:42.785053" elapsed="1.463089"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:45.403856" elapsed="0.001008"/>
+</kw>
+<var name="${ELEMENT}">morango</var>
+<status status="PASS" start="2024-02-19T18:59:44.248142" elapsed="1.156722"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T18:59:46.812761" elapsed="0.004658"/>
+</kw>
+<var name="${ELEMENT}">uva</var>
+<status status="PASS" start="2024-02-19T18:59:45.405947" elapsed="1.412480"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T19:00:00.554882" elapsed="0.001094"/>
+</kw>
+<var name="${ELEMENT}">laranja</var>
+<status status="PASS" start="2024-02-19T18:59:46.818427" elapsed="13.737549"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-19T19:00:01.464714" elapsed="0.000997"/>
+</kw>
+<var name="${ELEMENT}">banana</var>
+<status status="PASS" start="2024-02-19T19:00:00.555976" elapsed="0.909735"/>
+</iter>
+<var>${ELEMENT}</var>
+<value>@{Lista_Frutas}</value>
+<status status="PASS" start="2024-02-19T18:59:40.899857" elapsed="20.565854"/>
+</for>
+<tag>lista</tag>
+<status status="PASS" start="2024-02-19T18:59:39.782292" elapsed="21.683419"/>
+</test>
+<status status="PASS" start="2024-02-19T18:59:31.033947" elapsed="30.433761"/>
+</suite>
+<status status="PASS" start="2024-02-19T18:59:31.006660" elapsed="30.464750"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Cat</stat>
+<stat pass="2" fail="0" skip="0">Cats</stat>
+<stat pass="1" fail="0" skip="0">dicionario</stat>
+<stat pass="1" fail="0" skip="0">lista</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Sankhya Treinamento Robot Framework">Sankhya Treinamento Robot Framework</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Exemplo">Sankhya Treinamento Robot Framework.Exemplo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
