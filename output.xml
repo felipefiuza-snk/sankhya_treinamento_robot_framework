@@ -1,136 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-19T18:51:01.835718" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-21T17:45:59.206344" rpa="false" schemaversion="5">
 <suite id="s1" name="Sankhya Treinamento Robot Framework" source="C:\Users\felipe.fiuza\Documents\sankhya_treinamento_robot_framework">
 <suite id="s1-s1" name="Exemplo" source="C:\Users\felipe.fiuza\Documents\sankhya_treinamento_robot_framework\exemplo.robot">
-<test id="s1-s1-t1" name="Teste1" line="15">
-<kw name="Catenate" owner="BuiltIn">
-<msg time="2024-02-19T18:51:01.869825" level="INFO">${log} = 
- hello word 
-</msg>
-<var>${log}</var>
-<arg>\n hello</arg>
-<arg>word \n</arg>
-<doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.869825" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${log}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.870841" elapsed="0.000000"/>
-</kw>
-<tag>Cat</tag>
-<tag>Cats</tag>
-<status status="PASS" start="2024-02-19T18:51:01.868645" elapsed="0.002196"/>
-</test>
-<test id="s1-s1-t2" name="Teste2" line="20">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>\n\n meu segundo teste \n\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.873750" elapsed="0.003250"/>
-</kw>
-<status status="PASS" start="2024-02-19T18:51:01.873247" elapsed="0.004747"/>
-</test>
-<test id="s1-s1-t3" name="Teste3" line="23">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>\n\n Olá ${a} ${b}!! \n\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.880024" elapsed="0.001434"/>
-</kw>
-<tag>Cats</tag>
-<status status="PASS" start="2024-02-19T18:51:01.880024" elapsed="0.002488"/>
-</test>
-<test id="s1-s1-t4" name="Teste4" line="27">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>\n\n Olá ${Pessoa.nome} ${Pessoa.sobrenome} voce tem ${Pessoa.idade}, mora em ${Pessoa.cidade}, trabalha na ${Pessoa.empresa} no cargo de ${Pessoa.cargo} !! \n\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.885055" elapsed="0.002119"/>
-</kw>
-<tag>dicionario</tag>
-<status status="PASS" start="2024-02-19T18:51:01.884016" elapsed="0.004165"/>
-</test>
-<test id="s1-s1-t5" name="Teste5" line="31">
-<for flavor="IN">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${ELEMENT}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.892323" elapsed="0.000000"/>
-</kw>
-<var name="${ELEMENT}">abacaxi</var>
-<status status="PASS" start="2024-02-19T18:51:01.892323" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${ELEMENT}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.893830" elapsed="0.000000"/>
-</kw>
-<var name="${ELEMENT}">morango</var>
-<status status="PASS" start="2024-02-19T18:51:01.892323" elapsed="0.001507"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${ELEMENT}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.893830" elapsed="0.000000"/>
-</kw>
-<var name="${ELEMENT}">uva</var>
-<status status="PASS" start="2024-02-19T18:51:01.893830" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${ELEMENT}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.895302" elapsed="0.000000"/>
-</kw>
-<var name="${ELEMENT}">laranja</var>
-<status status="PASS" start="2024-02-19T18:51:01.893830" elapsed="0.001472"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${ELEMENT}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-19T18:51:01.895302" elapsed="0.000000"/>
-</kw>
-<var name="${ELEMENT}">banana</var>
-<status status="PASS" start="2024-02-19T18:51:01.895302" elapsed="0.000000"/>
-</iter>
+<test id="s1-s1-t1" name="Teste6" line="42">
+<kw name="Criar email para &quot;Felipe&quot; &quot;Fiuza&quot; &quot;33&quot;" source_name="Criar email para &quot;${nome}&quot; &quot;${sobrenome}&quot; &quot;${idade}&quot;">
+<return>
+<value>${nome}_${sobrenome}_${idade}@robot.com</value>
+<status status="PASS" start="2024-02-21T17:45:59.230585" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-21T17:45:59.232676" level="INFO">${ELEMENT} = Felipe_Fiuza_33@robot.com</msg>
 <var>${ELEMENT}</var>
-<value>@{Lista_Frutas}</value>
-<status status="PASS" start="2024-02-19T18:51:01.891297" elapsed="0.004005"/>
-</for>
-<tag>lista</tag>
-<status status="PASS" start="2024-02-19T18:51:01.890264" elapsed="0.006292"/>
+<status status="PASS" start="2024-02-21T17:45:59.230585" elapsed="0.002091"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n\n${ELEMENT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-21T17:45:59.232676" elapsed="0.001002"/>
+</kw>
+<tag>lista6</tag>
+<status status="PASS" start="2024-02-21T17:45:59.230585" elapsed="0.004421"/>
 </test>
-<status status="PASS" start="2024-02-19T18:51:01.862487" elapsed="0.035107"/>
+<status status="PASS" start="2024-02-21T17:45:59.226577" elapsed="0.009427"/>
 </suite>
-<status status="PASS" start="2024-02-19T18:51:01.840096" elapsed="0.058931"/>
+<status status="PASS" start="2024-02-21T17:45:59.206344" elapsed="0.032648"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Cat</stat>
-<stat pass="2" fail="0" skip="0">Cats</stat>
-<stat pass="1" fail="0" skip="0">dicionario</stat>
-<stat pass="1" fail="0" skip="0">lista</stat>
+<stat pass="1" fail="0" skip="0">lista6</stat>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Sankhya Treinamento Robot Framework">Sankhya Treinamento Robot Framework</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1" name="Exemplo">Sankhya Treinamento Robot Framework.Exemplo</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sankhya Treinamento Robot Framework">Sankhya Treinamento Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Exemplo">Sankhya Treinamento Robot Framework.Exemplo</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-02-19T18:51:01.866532" level="ERROR">Error in file 'C:\Users\felipe.fiuza\Documents\sankhya_treinamento_robot_framework\exemplo.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311\Scripts\robot.exe
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311\python311.zip
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311\DLLs
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311\Lib
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311
-  C:\Users\felipe.fiuza\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
 </errors>
 </robot>
